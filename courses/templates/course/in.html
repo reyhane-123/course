@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>project</title>
+        <style>
+            .conteiner{
+                display:flex;
+                padding:20px;
+                background-color:white;
+            }
+            .box{
+                width:300px;
+                height:450px;
+                background-color:orange;
+                margin:10px;
+            }
+            .boxx{
+                width:300px;
+                height:450px;
+                background-color:yellow;
+                margin:10px;
+            }
+            .boxxx{
+                width:300px;
+                height:450px;
+                background-color:blue;
+                margin:10px;
+            }
+        </style>
+    </head>
+    <body dir="rtl">
+        <center>
+        <div class="conteiner">
+            {%for item in course1%}
+                <div class="box" >
+
+                    {{item.name}}
+
+                </div>
+            {% endfor %}
+            {%for item in course1%}
+                <div class="boxx">
+
+                    {{item.teacher}}
+            
+                </div>
+            {% endfor %}
+            {%for item in course1%}
+                <div class="boxxx" >
+                    {{item.price}}
+    
+
+                </div>
+            {% endfor %}
+        </center>
+    </body>
+</html>
